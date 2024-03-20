@@ -1,3 +1,63 @@
 body {
-    padding-top: 5rem;
+    padding-top: 3rem;
+}
+
+/* form styling */
+h1 {
+    margin-bottom: 15px;
+}
+
+.properties{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.propdesc img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.location {
+    color: #777;
+    margin-top: 5px;
+}
+
+.price {
+    color: #fff;
+    font-size: 12px;
+    background-color: #3498db;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.propdesc {
+    display: block;
+    text-align: center;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+
+.desc a{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class = "property">
+    <img src ="{{ url_for('get_image', filename= photo) }}" alt="Property:{{ property.title }}">
+    <div class = "desc">
+        <h3>{{ property.title }}</h3>
+        <div class = "info">
+            <p class = "price">Price: {{ property.price }}</p>
+            <p class = "type">Type: {{ property.type }}</p>
+        </div>
+        <p class = "description">Description:{{ property.description }}</p>
+            <div class = "bedrooms">
+                <p class = "bedroom">Beds: {{ property.rooms }} Bedrooms</p>
+            </div>
+            <div class = "bathrooms">
+                <p class = "bathroom">Bathrooms: {{ property.bathrooms }} Bathrooms</p>
+            </div>
+        <div class = "address">
+            <p>Address: {{ property.location }}</p>
+        </div>
+        <button class="btn">Email</button>
+    </div>
+
+</div>
